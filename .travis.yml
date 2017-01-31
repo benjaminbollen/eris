@@ -18,9 +18,11 @@ install:
 - sudo bash -c "curl -sSL https://github.com/docker/machine/releases/download/v0.6.0/docker-machine-darwin-x86_64 >/usr/local/bin/docker-machine"
 - sudo chmod +x /usr/local/bin/docker-machine
 - go install ./cmd/eris
+- docker-machine create eris-osx-test --driver amazonec2
+- eval $(docker-machine env eris-osx-test)
 
 script:
-- tests/test.sh
+- tests/test_tool.sh
 - tests/dm_cleanup.sh
 
 notifications:
