@@ -1,0 +1,30 @@
+jobs:
+
+- name: deployLibNormal
+  job:
+    deploy:
+      contract: contract_and_lib.sol
+      instance: Set
+      save: true
+
+- name: deployContractNormal
+  job:
+    deploy:
+      contract: contract_and_lib.sol
+      instance: C
+      save: true
+
+  #now that we have bins, lets redo this with them
+
+jobs:
+
+- name: deployLibBin
+  job:
+    deploy:
+      contract: bin/Set.bin
+
+- name: deployContractNormal
+  job:
+    deploy:
+      contract: bin/C.bin
+      libraries: Set:$deployLibBin

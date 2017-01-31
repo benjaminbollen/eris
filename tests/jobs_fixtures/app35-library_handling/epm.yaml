@@ -28,4 +28,3 @@ jobs:
     deploy:
       contract: multi-lib-consumer.sol
       libraries: basicMath:$deployBasicMath,intStructs:$deployIntStructs
-      wait: true
