@@ -26,6 +26,8 @@ build_script:
 
     choco install -yr cygwin
 
+    choco install -yr mingw
+
     choco install -yr jq
 
     choco install -yr docker -version %DOCKER_VERSION%
