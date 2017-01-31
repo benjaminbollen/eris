@@ -14,7 +14,7 @@ jobs:
 - name: deployActualBinaryK
   job:
     deploy:
-      contract: binary.bin
+      contract: bin/binary.bin
 
 - name: setStorage
   job:
