@@ -26,6 +26,10 @@ build_script:
 
     choco install -yr mingw
 
+    choco install -yr mingw-get
+    
+    mingw-get install gcc
+
     choco install -yr jq
 
     choco install -yr docker -version %DOCKER_VERSION%
