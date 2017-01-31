@@ -38,10 +38,14 @@ build_script:
 
     go install
 
+    docker-machine create $MACHINE_NAME --driver amazonec2
+
+    eval $(docker-machine env $MACHINE_NAME)
+
 after_test:
   - bash c:\src\github.com\eris-ltd\eris\tests\dm_cleanup.sh
 
 test_script:
 - cmd: >-
 
-    bash c:\src\github.com\eris-ltd\eris\tests\test.sh
+    bash c:\src\github.com\eris-ltd\eris\tests\test_tool.sh
