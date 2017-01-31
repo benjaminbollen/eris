@@ -24,8 +24,6 @@ environment:
 build_script:
 - cmd: >-
 
-    choco install -yr cygwin
-
     choco install -yr mingw
 
     choco install -yr jq
