@@ -21,6 +21,9 @@ environment:
   AWS_SECURITY_GROUP:
     secure: Jie7WuAzjiHVp7tX8MfaSQ==
 
+install:
+        - go version
+
 build_script:
 - cmd: >-
 
