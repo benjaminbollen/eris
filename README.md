@@ -1,8 +1,3 @@
-|[![GoDoc](https://godoc.org/github.com/eris-ltd/eris/cmd/eris?status.png)](https://godoc.org/github.com/eris-ltd/eris/cmd/eris) | Linux | macOS | Windows |
-|---|-------|-----|---------|
-| Master | [![Linux](https://circleci.com/gh/eris-ltd/eris/tree/master.svg?style=svg)](https://circleci.com/gh/eris-ltd/eris/tree/master) | [![macOS](https://travis-ci.org/eris-ltd/eris.svg?branch=master)](https://travis-ci.org/eris-ltd/eris) | [![Windows](https://ci.appveyor.com/api/projects/status/lfkvvy6h7u0owv19/branch/master?svg=true)](https://ci.appveyor.com/project/eris-ltd/eris) |
-| Develop | [![Linux](https://circleci.com/gh/eris-ltd/eris/tree/develop.svg?style=svg)](https://circleci.com/gh/eris-ltd/eris/tree/develop) | [![macOS](https://travis-ci.org/eris-ltd/eris.svg?branch=develop)](https://travis-ci.org/eris-ltd/eris) | [![Windows](https://ci.appveyor.com/api/projects/status/lfkvvy6h7u0owv19/branch/develop?svg=true)](https://ci.appveyor.com/project/eris-ltd/eris) |
-
 # Introduction
 
 ```
