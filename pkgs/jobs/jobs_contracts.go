@@ -74,10 +74,16 @@ func DeployJob(deploy *definitions.Deploy, do *definitions.Do) (result string, e
 	// compile
 	if filepath.Ext(deploy.Contract) == ".bin" {
 		log.Info("Binary file detected. Using binary deploy sequence.")
-		contractCode, err := compilers.RequestBinaryLinkage(do.Compiler+"/binaries", contractPath, deploy.Libraries)
+		contractPath = filepath.Join(do.BinPath, deploy.Contract)
+		binaryResponse, err := compilers.RequestBinaryLinkage(do.Compiler+"/binaries", contractPath, deploy.Libraries)
 		if err != nil {
 			return "", fmt.Errorf("Something went wrong with your binary deployment: %v", err)
 		}
+		if binaryResponse.Error != "" {
+			return "", fmt.Errorf("Something went wrong when you were trying to link your binaries: %v", binaryResponse.Error)
+		}
+		contractCode := binaryResponse.Binary
+
 		tx, err := deployRaw(do, deploy, contractName, string(contractCode))
 		if err != nil {
 			return "could not deploy binary contract", err
@@ -179,7 +185,6 @@ func deployContract(deploy *definitions.Deploy, do *definitions.Do, compilersRes
 
 	// saving binary
 	if deploy.SaveBinary {
-		contractDir := filepath.Dir(deploy.Contract)
 		contractName := filepath.Join(do.BinPath, fmt.Sprintf("%s.bin", compilersResponse.Objectname))
 		log.WithField("=>", contractName).Warn("Saving Binary")
 		if err := ioutil.WriteFile(contractName, []byte(contractCode), 0664); err != nil {

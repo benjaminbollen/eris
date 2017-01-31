@@ -1,4 +1,4 @@
-pragma solidity >= 0.0.0;
+pragma solidity >=0.0.0;
 
 library Search {
     function indexOf(uint[] storage self, uint value) returns (uint) {

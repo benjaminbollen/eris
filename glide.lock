@@ -58,7 +58,7 @@ imports:
 - name: github.com/ebuchman/fail-test
   version: c1eddaa09da2b4017351245b0d43234955276798
 - name: github.com/eris-ltd/eris-compilers
-  version: 867868488fdd310584c2f7a917441966283c77a9
+  version: d1c3facd245915a8a65b9d5dbc787c1507c12aa0
   subpackages:
   - definitions
   - perform

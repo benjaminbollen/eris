@@ -1,4 +1,4 @@
-pragma solidity >= 0.0.0;
+pragma solidity >=0.0.0;
 
 import "./GSSingle.sol";
 import "./GSMulti.sol";

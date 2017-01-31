@@ -21,10 +21,10 @@ jobs:
 - name: deployLibBin
   job:
     deploy:
-      contract: bin/Set.bin
+      contract: Set.bin
 
 - name: deployContractNormal
   job:
     deploy:
-      contract: bin/C.bin
+      contract: C.bin
       libraries: Set:$deployLibBin

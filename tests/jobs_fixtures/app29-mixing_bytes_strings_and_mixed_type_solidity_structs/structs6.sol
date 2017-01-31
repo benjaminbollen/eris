@@ -1,4 +1,4 @@
-pragma solidity >= 0.0.0;
+pragma solidity >=0.0.0;
 
 contract Structs6 {
     struct Thing {
