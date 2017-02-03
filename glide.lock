@@ -1,5 +1,5 @@
-hash: 2ff07a059e1543e5ef9d236cc83486c9a37b54cedffd0309d21428189426a580
-updated: 2017-01-28T11:58:53.131266504-06:00
+hash: 055142e18d826c64c55bae81afbe5aa3c2bd6e73af759c3a84449830d93aeaf3
+updated: 2017-02-03T15:29:25.314766985+01:00
 imports:
 - name: github.com/Azure/go-ansiterm
   version: fa152c58bc15761d0200cb75fe958b89a9d4888e
@@ -55,16 +55,14 @@ imports:
   version: 47238d5aae8c0fefd518ef2bee46290909cf8263
 - name: github.com/eapache/queue
   version: 44cc805cf13205b55f69e14bcb69867d1ae92f98
-- name: github.com/ebuchman/fail-test
-  version: c1eddaa09da2b4017351245b0d43234955276798
 - name: github.com/eris-ltd/eris-compilers
-  version: 867868488fdd310584c2f7a917441966283c77a9
+  version: 80a2287ac76b8426dcf6bbbfd1e164b52154ba82
   subpackages:
   - definitions
   - perform
   - util
 - name: github.com/eris-ltd/eris-db
-  version: f29b2155657fd1b965ec821ad5567ab0a70f7e98
+  version: 3d0481a8b602deeb011cbf54096d83a8c508b97b
   subpackages:
   - account
   - client
@@ -111,7 +109,7 @@ imports:
 - name: github.com/go-stack/stack
   version: 100eb0c0a9c5b306ca2fb4f165df21d80ada4b82
 - name: github.com/golang/protobuf
-  version: 0c1f6d65b5a189c2250d10e71a5506f06f9fa0a0
+  version: f7137ae6b19afbfd61a94b746fda3b3fe0491874
   subpackages:
   - proto
 - name: github.com/golang/snappy
@@ -133,8 +131,6 @@ imports:
   - json/token
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
-- name: github.com/jmhodges/levigo
-  version: c42d9e0ca023e2198120196f842701bb4c55d7b9
 - name: github.com/kardianos/osext
   version: c2c54e542fb797ad986b31721e1baedf214ca413
 - name: github.com/kr/logfmt
@@ -203,13 +199,6 @@ imports:
   - leveldb/util
 - name: github.com/tcnksm/go-gitconfig
   version: d154598bacbf4501c095a309753c5d4af66caa81
-- name: github.com/tendermint/abci
-  version: f94ae5eeed7659a46a5d186cc706c31aa55edc66
-  subpackages:
-  - client
-  - example/dummy
-  - example/nil
-  - types
 - name: github.com/tendermint/ed25519
   version: fdac6641497281ed1cc368687ec6377e96e02b24
   subpackages:
@@ -241,7 +230,6 @@ imports:
   version: 479510be0e80dd9e5d6b1f941adad168df0af85f
   subpackages:
   - client
-  - server
   - types
 - name: github.com/tendermint/go-wire
   version: 3b0adbc86ed8425eaed98516165b6788d9f4de7a
@@ -252,23 +240,17 @@ imports:
 - name: github.com/tendermint/tendermint
   version: aaea0c5d2e3ecfbf29f2608f9d43649ec7f07f50
   subpackages:
-  - node
-  - proxy
-  - types
-  - version
-  - consensus
-  - rpc/core/types
   - blockchain
+  - consensus
   - mempool
-  - rpc/core
+  - proxy
   - state
+  - types
 - name: github.com/tendermint/tmsp
   version: 73e5c3cb7bbee2f9c49792e5a0fcbcab442bf7dc
   subpackages:
   - client
   - types
-  - example/dummy
-  - example/nil
 - name: golang.org/x/crypto
   version: 854ae91cdcbf914b499b1d7641d07859f3653481
   subpackages:
@@ -311,8 +293,6 @@ imports:
   - metadata
   - naming
   - peer
-  - stats
-  - tap
   - transport
 - name: gopkg.in/yaml.v2
   version: 4c78c975fe7c825c6d1466c42be594d1d6f3aba6

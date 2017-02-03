@@ -1,0 +1,8 @@
+package: github.com/eris-ltd/eris-compilers
+import:
+- package: github.com/eris-ltd/eris
+  version: develop
+  subpackages:
+  - config
+  - log
+- package: github.com/spf13/cobra
