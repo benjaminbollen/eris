@@ -11,12 +11,15 @@ import:
   - pkg/jsonmessage
   - pkg/term
 - package: github.com/ethereum/go-ethereum
-  version: master
+  version: c46c41eae35e3083090e5806932fc5076e53e37c
+  # version: master
   subpackages:
   - accounts/abi
   - common
 - package: github.com/fsouza/go-dockerclient
+  version: 6823f17d2af49fda944c94e657cebf3b498bc2f8
 - package: github.com/kr/text
+  version: 7cafcd837844e784b526369c9bce262804aebc60
   subpackages:
   - colwriter
 - package: github.com/oleiade/reflections
@@ -24,6 +27,7 @@ import:
 - package: github.com/pborman/uuid
   version: v1.0
 - package: github.com/serenize/snaker
+  version: 543781d2b79bd95c51ffe70e70a55c946ca211ff
 - package: github.com/spf13/cobra
 - package: github.com/spf13/pflag
 - package: github.com/spf13/viper
@@ -34,11 +38,11 @@ import:
   - unix
 - package: gopkg.in/yaml.v2
 - package: github.com/eris-ltd/eris-compilers
-  version: develop
+  version: release-0.16
   subpackages:
   - perform
 - package: github.com/eris-ltd/eris-db
-  version: develop
+  version: release-0.16
   subpackages:
   - client
   - client/rpc
