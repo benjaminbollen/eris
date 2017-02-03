@@ -34,11 +34,11 @@ import:
   - unix
 - package: gopkg.in/yaml.v2
 - package: github.com/eris-ltd/eris-compilers
-  version: develop
+  version: release-0.16
   subpackages:
   - perform
 - package: github.com/eris-ltd/eris-db
-  version: develop
+  version: release-0.16
   subpackages:
   - client
   - client/rpc
