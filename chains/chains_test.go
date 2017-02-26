@@ -24,7 +24,7 @@ var (
 
 func TestMain(m *testing.M) {
 	log.SetLevel(log.ErrorLevel)
-	// log.SetLevel(log.InfoLevel)
+	log.SetLevel(log.InfoLevel)
 	// log.SetLevel(log.DebugLevel)
 
 	testutil.IfExit(testutil.Init(testutil.Pull{
