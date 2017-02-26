@@ -46,7 +46,6 @@ declare -a checks
 
 cd $repo
 
-source ./tests/machine/docker_machine.sh
 export ERIS_PULL_APPROVE="true"
 export ERIS_MIGRATE_APPROVE="true"
 
