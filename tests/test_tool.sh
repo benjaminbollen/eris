@@ -46,6 +46,7 @@ declare -a checks
 
 cd $repo
 
+source $GOPATH/src/$base/tests/machine/docker_machine.sh
 export ERIS_PULL_APPROVE="true"
 export ERIS_MIGRATE_APPROVE="true"
 
@@ -113,6 +114,7 @@ setup() {
 
 packagesToTest() {
   fail="false"
+  sleeper &
   if [[ "$SKIP_PACKAGES" != "true" ]]
   then
     go test ./initialize/... -v && passed Initialize
