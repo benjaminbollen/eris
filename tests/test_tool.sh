@@ -115,7 +115,6 @@ setup() {
 
 packagesToTest() {
   fail="false"
-  sleeper &
   if [[ "$SKIP_PACKAGES" != "true" ]]
   then
     go test ./initialize/... -v && passed Initialize
@@ -134,6 +133,7 @@ packagesToTest() {
     if [ $? -ne 0 ]; then fail="true"; fi
     go test ./services/... -v && passed Services
     if [ $? -ne 0 ]; then fail="true"; fi
+    sleeper &
     go test ./chains/... -v -timeout 20m && passed Chains
     if [ $? -ne 0 ]; then fail="true"; fi
     go test ./keys/... -v && passed Keys
