@@ -35,6 +35,8 @@ start=`pwd`
 base=github.com/eris-ltd/eris
 repo=$GOPATH/src/$base
 
+source $repo/tests/machines/docker_machine.sh
+
 # If an arg is passed to the script we will assume that only local
 #   tests will be ran.
 
